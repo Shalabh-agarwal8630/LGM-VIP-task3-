@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Registration Form</h1>
+      <form id="registrationForm">
+        <div class="field">
+          <input type="text" id="name" placeholder="Name" required>
+        </div>
+        <div class="field">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="field">
+          <input type="url" id="website" placeholder="Website URL">
+        </div>
+        <div class="field">
+          <input type="text" id="image" placeholder="Image URL">
+        </div>
+        <div class="field">
+          <h3><label for="gender">Gender:</label></h3>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="field">
+          <h3>Skills:</h3>
+          <label><input type="checkbox" name="skills" value="html">HTML</label>
+          <label><input type="checkbox" name="skills" value="css">CSS</label>
+          <label><input type="checkbox" name="skills" value="js">JavaScript</label>
+        </div>
+        <div class="button-container">
+          <button type="submit" id="enrollBtn">Enroll Student</button>
+          <button type="button" onclick="clearForm()">Clear</button>
+        </div>
+      </form>
+    </div>
+    <div class="output-container" id="outputContainer">
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

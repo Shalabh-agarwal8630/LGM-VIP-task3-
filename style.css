@@ -1,0 +1,129 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Times New Roman", Times, serif;
+ background-color: #f9fafc;
+ color: #333333;
+ background: linear-gradient(135deg, #FFD700, #1E90FF);
+ background-size: 400% 400%;
+ animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
+.container {
+ max-width: 960px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.form-container,
+.output-container {
+ width: 50%;
+ padding: 40px;
+ border-radius: 10px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.form-container {
+ background-color: #0ec6e7;
+}
+
+.output-container {
+ display: none; 
+ background-color: #eeea05;
+ color: #100f0f;
+ font-size: 18px;
+ padding: 20px; 
+}
+
+.output-container p {
+ margin-bottom: 10px; }
+
+.output-container img {
+ margin-bottom: 20px;
+}
+
+.container h1 {
+ text-align: center;
+ font-size: 32px;
+ font-weight: bold;
+ margin-bottom: 30px;
+}
+
+.container .field {
+ margin-bottom: 20px;
+ 
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="url"],
+.container select {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #dddddd;
+ border-radius: 6px;
+ font-size: 16px;
+ background-color: #ffffff;
+ color: #333333;
+ transition: border-color 0.3s ease;
+}
+
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="url"]:focus,
+.container select:focus {
+ border-color: #ff5e63;
+}
+
+.container select {
+ appearance: none;
+ -webkit-appearance: none;
+ background: url('dropdown-icon.svg') no-repeat right center;
+ background-size: 20px;
+ padding-right: 40px;
+}
+
+.container input[type="checkbox"] {
+ margin-top: 10px;
+}
+
+.button-container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.container button {
+ flex-basis: calc(50% - 10px);
+ padding: 12px;
+ background-color: #ff5e63;
+ color: #ffffff;
+ border: none;
+ border-radius: 6px;
+ font-size: 16px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+ background-color: #ff3b3f;
+}
